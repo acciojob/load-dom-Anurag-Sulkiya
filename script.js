@@ -1,7 +1,6 @@
 function showDOMLoadedMessage(params) {
-	var message = document.createElement("p");
-	message.textContent = "DOM load success"
-	document.body.appendChild(message);
+	var textNode = document.createTextNode("DOM load success");
+	document.body.appendChild(textNode);
 }
 
 document.addEventListener("DOMContentLoaded", showDOMLoadedMessage);
